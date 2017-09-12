@@ -2,6 +2,13 @@ package com.huios.mavenappli.Archi2.metier;
 
 public class Personne {
 	private int num;
+	private String nom;
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 	private String prenom;
 	public int getNum() {
 		return num;
@@ -17,7 +24,7 @@ public class Personne {
 	}
 	@Override
 	public String toString() {
-		return "Personne [num=" + num + ", prenom=" + prenom + "]";
+		return "Personne [num=" + num + ", nom=" + nom + ", prenom=" + prenom + "]";
 	}
 	
 }
